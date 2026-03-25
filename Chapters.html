@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapters — Synap Kids</title>
+  <meta name="keywords" content="Braeden Belvedere, Synap Kids, Board of Directors, Chief Technology Officer, Pediatric Neurology, Activist">
+  <link rel="canonical" href="https://synapkids.belvederetechnologies.com/chapters.html">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="global.css">
+</head>
+<body>
+
+<div id="navbar-placeholder"></div>
+
+<main>
+<!-- ══════ CHAPTERS ══════ -->
+  <div class="page" id="pg-chapters">
+    <div class="pg-hero fade">
+      <div class="ph-blob1"></div>
+      <div class="ph-blob2"></div>
+      <div style="position:relative;z-index:2">
+        <span class="tag tag-navy">All Chapters</span>
+        <h1>Find a chapter <span>near you</span></h1>
+        <p>47 active chapters across 12 states — run by young leaders making a real difference in their communities. Search, explore, and connect.</p>
+      </div>
+    </div>
+
+    <div class="section container">
+
+      <!-- FILTER BAR -->
+      <div class="fade" style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:32px">
+        <div class="art-search-wrap" style="max-width:340px;flex:1">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8" />
+            <line x1="21" y1="21" x2="16.65" y2="16.65" />
+          </svg>
+          <input class="art-search" id="chapSearch" type="text" placeholder="Search by city, school, or name…" oninput="filterChaps()">
+        </div>
+        <select id="chapState" onchange="filterChaps()" style="padding:10px 16px;border:2px solid var(--rule);border-radius:50px;font-family:'Nunito',sans-serif;font-size:0.88rem;font-weight:700;background:white;color:var(--text);outline:none;cursor:pointer">
+          <option value="">All States</option>
+          <option>Michigan</option>
+          <option>Texas</option>
+          <option>California</option>
+          <option>Illinois</option>
+          <option>Ohio</option>
+          <option>Georgia</option>
+          <option>New York</option>
+          <option>Florida</option>
+          <option>Arizona</option>
+          <option>Washington</option>
+          <option>Tennessee</option>
+          <option>Pennsylvania</option>
+        </select>
+        <select id="chapType" onchange="filterChaps()" style="padding:10px 16px;border:2px solid var(--rule);border-radius:50px;font-family:'Nunito',sans-serif;font-size:0.88rem;font-weight:700;background:white;color:var(--text);outline:none;cursor:pointer">
+          <option value="">All Types</option>
+          <option>School-Based</option>
+          <option>Community</option>
+          <option>University</option>
+          <option>Hospital</option>
+        </select>
+        <span id="chapCount" style="font-size:0.84rem;font-weight:700;color:var(--muted);margin-left:4px"></span>
+      </div>
+
+      <!-- STATE QUICK-JUMP -->
+      <div class="fade" style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:36px" id="stateJump"></div>
+
+      <!-- CHAPTERS GRID -->
+      <div id="chapsGrid" class="fade" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px"></div>
+      <div id="chapsNone" style="display:none;padding:60px 0;text-align:center">
+        <div style="font-family:'Baloo 2',cursive;font-size:1.4rem;font-weight:700;color:var(--navy);margin-bottom:6px">No chapters found</div>
+        <p style="margin-bottom:20px">No results match your search. Try different filters — or start a chapter yourself!</p>
+        <a class="btn btn-coral" href="#" onclick="go('involve')">Start a Chapter</a>
+      </div>
+    </div>
+
+    <!-- MAP BAND -->
+    <div style="background:var(--navy);padding:56px;text-align:center">
+      <div class="fade">
+        <span class="tag tag-navy">Spread</span>
+        <h2 style="color:white;margin-bottom:10px">12 states and <span style="color:var(--coral)">growing</span></h2>
+        <p style="color:rgba(255,255,255,0.55);max-width:480px;margin:0 auto 28px">Every chapter starts with one person who decided to show up. The next one could be in your town.</p>
+        <a class="btn btn-coral" href="#" onclick="go('involve')" style="font-size:1rem;padding:13px 32px">Start a Chapter in Your City →</a>
+      </div>
+    </div>
+</main>
+
+<!-- ══════ WATCH AN AD MODAL ══════ -->
+  <div id="adModal" style="display:none;position:fixed;inset:0;background:rgba(12,20,35,0.88);backdrop-filter:blur(6px);z-index:999;align-items:center;justify-content:center;padding:20px">
+    <div style="background:var(--navy);border-radius:22px;width:100%;max-width:620px;overflow:hidden;position:relative;box-shadow:0 24px 80px rgba(0,0,0,0.5)">
+
+      <!-- Header -->
+      <div style="padding:22px 28px 18px;border-bottom:1px solid rgba(255,255,255,0.08);display:flex;align-items:center;justify-content:space-between">
+        <div>
+          <div style="font-family:'Baloo 2',cursive;font-size:1.1rem;font-weight:700;color:white">Watch an Ad, Support Kids</div>
+          <div style="font-size:0.78rem;color:rgba(255,255,255,0.45);margin-top:2px">Every view generates a small donation to Synap Kids — at no cost to you</div>
+        </div>
+        <button onclick="closeAdModal()" id="adCloseBtn" disabled style="background:rgba(255,255,255,0.08);border:none;border-radius:50%;width:34px;height:34px;cursor:not-allowed;color:rgba(255,255,255,0.3);font-size:1rem;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all 0.2s">✕</button>
+      </div>
+
+      <!-- Ad player area -->
+      <div id="adPlayerArea" style="position:relative;background:#000;aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;overflow:hidden">
+
+        <!-- Fake ad content -->
+        <div id="adContent" style="width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;background:linear-gradient(135deg,#1a1a2e,#16213e,#0f3460);position:relative;overflow:hidden">
+          <!-- Decorative bg circles -->
+          <div style="position:absolute;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(59,130,196,0.15),transparent 70%);top:-80px;right:-80px;pointer-events:none"></div>
+          <div style="position:absolute;width:200px;height:200px;border-radius:50%;background:radial-gradient(circle,rgba(245,166,35,0.1),transparent 70%);bottom:-40px;left:-40px;pointer-events:none"></div>
+
+          <!-- Ad placeholder visual -->
+          <div style="text-align:center;padding:40px;position:relative;z-index:2">
+            <div style="width:64px;height:64px;border-radius:18px;background:rgba(255,255,255,0.1);border:1.5px solid rgba(255,255,255,0.15);display:flex;align-items:center;justify-content:center;margin:0 auto 16px">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="1.8" stroke-linecap="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" />
+                <line x1="8" y1="21" x2="16" y2="21" />
+                <line x1="12" y1="17" x2="12" y2="21" />
+              </svg>
+            </div>
+            <div style="font-family:'Baloo 2',cursive;font-size:1.1rem;font-weight:700;color:rgba(255,255,255,0.8);margin-bottom:6px">Advertisement</div>
+            <div style="font-size:0.82rem;color:rgba(255,255,255,0.35)">Brought to you by a Synap Kids partner</div>
+          </div>
+        </div>
+
+        <!-- Next button (disabled until countdown reaches 0) -->
+        <div id="adNextBtn" style="position:absolute;bottom:14px;right:14px">
+          <button id="adNextBtnEl" onclick="finishAdEarly()" disabled style="font-family:'Baloo 2',cursive;font-size:0.8rem;font-weight:700;padding:8px 18px;border-radius:8px;border:1.5px solid rgba(255,255,255,0.25);background:rgba(0,0,0,0.65);color:rgba(255,255,255,0.4);cursor:not-allowed;transition:all 0.25s;backdrop-filter:blur(4px)">
+            Next &rarr; <span id="skipCountdown" style="opacity:0.7">15</span>s
+          </button>
+        </div>
+
+        <!-- Progress bar -->
+        <div style="position:absolute;bottom:0;left:0;right:0;height:3px;background:rgba(255,255,255,0.1)">
+          <div id="adProgressBar" style="height:100%;width:0%;background:var(--coral);border-radius:2px;transition:width 0.25s linear"></div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div style="padding:20px 28px 24px">
+        <div id="adWatchingState">
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px">
+            <div style="width:8px;height:8px;border-radius:50%;background:var(--coral);animation:pulse 1.2s ease-in-out infinite;flex-shrink:0"></div>
+            <div style="font-size:0.84rem;color:rgba(255,255,255,0.55)">Ad revenue is being collected for Synap Kids while you watch…</div>
+          </div>
+          <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:13px 16px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px">
+            <div style="font-size:0.8rem;color:rgba(255,255,255,0.4)">Estimated donation this view</div>
+            <div style="font-family:'Baloo 2',cursive;font-size:1.1rem;font-weight:800;color:var(--gold)" id="adEarningDisplay">$0.00</div>
+          </div>
+        </div>
+
+        <!-- Completed state -->
+        <div id="adDoneState" style="display:none;text-align:center;padding:8px 0">
+          <div style="width:48px;height:48px;background:linear-gradient(135deg,#2E7D52,#3D9959);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 12px">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round">
+              <polyline points="20 6 9 17 4 12" />
+            </svg>
+          </div>
+          <div style="font-family:'Baloo 2',cursive;font-size:1.2rem;font-weight:700;color:white;margin-bottom:4px">Thank you! You just helped a kid. 💚</div>
+          <div style="font-size:0.84rem;color:rgba(255,255,255,0.5);margin-bottom:18px">Your view generated a donation of <strong style="color:var(--gold)" id="adFinalAmt">$0.02</strong> to Synap Kids.</div>
+          <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap">
+            <button onclick="replayAd()" style="font-family:'Baloo 2',cursive;font-size:0.88rem;font-weight:700;padding:10px 22px;border-radius:50px;border:2px solid rgba(255,255,255,0.25);background:transparent;color:rgba(255,255,255,0.7);cursor:pointer;transition:all 0.2s" onmouseover="this.style.borderColor='rgba(255,255,255,0.6)';this.style.color='white'" onmouseout="this.style.borderColor='rgba(255,255,255,0.25)';this.style.color='rgba(255,255,255,0.7)'">▶ Watch Another</button>
+            <button onclick="closeAdModal()" style="font-family:'Baloo 2',cursive;font-size:0.88rem;font-weight:700;padding:10px 22px;border-radius:50px;border:none;background:var(--coral);color:white;cursor:pointer;transition:opacity 0.2s" onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'">Done</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+<div id="footer-placeholder"></div>
+
+<script src="global.js"></script>
+</body>
+</html>
