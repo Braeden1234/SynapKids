@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate — Synap Kids</title>
+  <meta name="keywords" content="Braeden Belvedere, Synap Kids, Board of Directors, Chief Technology Officer, Pediatric Neurology, Activist">
+  <link rel="canonical" href="https://synapkids.belvederetechnologies.com/donate.html">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="global.css">
+</head>
+<body>
+
+<div id="navbar-placeholder"></div>
+
+<main>
+<!-- ══════ DONATE ══════ -->
+  <div class="page" id="pg-donate">
+    <div class="pg-hero fade" style="background:linear-gradient(135deg,#1C2E4A 0%,#2E4A70 60%,#3B6B9E 100%)">
+      <div class="ph-blob1"></div>
+      <div class="ph-blob2"></div>
+      <div style="position:relative;z-index:2">
+        <span class="tag tag-navy">Donate</span>
+        <h1>Fuel the <span style="color:var(--gold)">next generation</span><br>of brain health</h1>
+        <p>Every dollar goes directly toward free resources, school programs, and training for the young leaders running this movement. 100% of donations fund programs.</p>
+      </div>
+    </div>
+
+    <!-- IMPACT STRIP -->
+    <div style="background:white;border-bottom:1px solid var(--rule)">
+      <div style="max-width:1120px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);border-left:1px solid var(--rule)">
+        <div style="padding:32px 28px;border-right:1px solid var(--rule);text-align:center" class="fade">
+          <div style="font-family:'Baloo 2',cursive;font-size:2.2rem;font-weight:800;color:var(--coral);line-height:1">$15</div>
+          <div style="font-size:0.82rem;font-weight:600;color:var(--muted);margin-top:4px">provides a full activity kit for one child</div>
+        </div>
+        <div style="padding:32px 28px;border-right:1px solid var(--rule);text-align:center" class="fade">
+          <div style="font-family:'Baloo 2',cursive;font-size:2.2rem;font-weight:800;color:var(--coral);line-height:1">$50</div>
+          <div style="font-size:0.82rem;font-weight:600;color:var(--muted);margin-top:4px">trains one peer mentor for a full semester</div>
+        </div>
+        <div style="padding:32px 28px;border-right:1px solid var(--rule);text-align:center" class="fade">
+          <div style="font-family:'Baloo 2',cursive;font-size:2.2rem;font-weight:800;color:var(--coral);line-height:1">$200</div>
+          <div style="font-size:0.82rem;font-weight:600;color:var(--muted);margin-top:4px">funds one family wellness workshop</div>
+        </div>
+        <div style="padding:32px 28px;text-align:center" class="fade">
+          <div style="font-family:'Baloo 2',cursive;font-size:2.2rem;font-weight:800;color:var(--coral);line-height:1">$500</div>
+          <div style="font-size:0.82rem;font-weight:600;color:var(--muted);margin-top:4px">launches a brand new chapter in a community</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section container">
+      <div style="display:grid;grid-template-columns:1fr 420px;gap:60px;align-items:start">
+
+        <!-- LEFT: TIERS -->
+        <div class="fade">
+          <span class="tag tag-blue">Choose Your Impact</span>
+          <h2>Every gift makes a <span class="hi-coral">real difference</span></h2>
+          <p style="margin-bottom:32px">Pick a giving tier below, or enter a custom amount. All donations are tax-deductible. We are a registered 501(c)(3) nonprofit.</p>
+
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:28px" id="tierGrid">
+
+            <div class="donate-tier" data-amt="15" onclick="selectTier(this,15)" style="border:2px solid var(--rule);border-radius:16px;padding:22px 20px;cursor:pointer;transition:all 0.2s;background:white">
+              <div style="font-family:'Baloo 2',cursive;font-size:1.8rem;font-weight:800;color:var(--navy);line-height:1;margin-bottom:4px">$15</div>
+              <div style="font-family:'Baloo 2',cursive;font-size:0.82rem;font-weight:700;color:var(--coral);margin-bottom:8px;text-transform:uppercase;letter-spacing:0.07em">Friend</div>
+              <p style="font-size:0.83rem;line-height:1.6;margin:0">Provides one child with a full activity kit and emotion journal.</p>
+            </div>
+
+            <div class="donate-tier" data-amt="50" onclick="selectTier(this,50)" style="border:2px solid var(--coral);border-radius:16px;padding:22px 20px;cursor:pointer;transition:all 0.2s;background:var(--coral-l);position:relative">
+              <div style="position:absolute;top:-10px;right:14px;background:var(--coral);color:white;font-family:'Baloo 2',cursive;font-size:0.6rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:3px 10px;border-radius:50px">Most Popular</div>
+              <div style="font-family:'Baloo 2',cursive;font-size:1.8rem;font-weight:800;color:var(--navy);line-height:1;margin-bottom:4px">$50</div>
+              <div style="font-family:'Baloo 2',cursive;font-size:0.82rem;font-weight:700;color:var(--coral);margin-bottom:8px;text-transform:uppercase;letter-spacing:0.07em">Supporter</div>
+              <p style="font-size:0.83rem;line-height:1.6;margin:0">Trains one peer mentor, supporting dozens of younger students for a full semester.</p>
+            </div>
+
+            <div class="donate-tier" data-amt="200" onclick="selectTier(this,200)" style="border:2px solid var(--rule);border-radius:16px;padding:22px 20px;cursor:pointer;transition:all 0.2s;background:white">
+              <div style="font-family:'Baloo 2',cursive;font-size:1.8rem;font-weight:800;color:var(--navy);line-height:1;margin-bottom:4px">$200</div>
+              <div style="font-family:'Baloo 2',cursive;font-size:0.82rem;font-weight:700;color:var(--coral);margin-bottom:8px;text-transform:uppercase;letter-spacing:0.07em">Champion</div>
+              <p style="font-size:0.83rem;line-height:1.6;margin:0">Funds an entire family wellness workshop for 20+ parents and kids in the community.</p>
+            </div>
+
+            <div class="donate-tier" data-amt="500" onclick="selectTier(this,500)" style="border:2px solid var(--rule);border-radius:16px;padding:22px 20px;cursor:pointer;transition:all 0.2s;background:white">
+              <div style="font-family:'Baloo 2',cursive;font-size:1.8rem;font-weight:800;color:var(--navy);line-height:1;margin-bottom:4px">$500</div>
+              <div style="font-family:'Baloo 2',cursive;font-size:0.82rem;font-weight:700;color:var(--coral);margin-bottom:8px;text-transform:uppercase;letter-spacing:0.07em">Founder</div>
+              <p style="font-size:0.83rem;line-height:1.6;margin:0">Launches a brand new chapter — covering training, materials, and first-year support.</p>
+            </div>
+
+          </div>
+
+          <!-- Custom amount -->
+          <div style="background:var(--warm);border:1px solid var(--rule);border-radius:14px;padding:18px 20px;display:flex;align-items:center;gap:14px;margin-bottom:24px">
+            <div style="font-family:'Baloo 2',cursive;font-size:1rem;font-weight:700;color:var(--muted);flex-shrink:0">Custom amount</div>
+            <div style="display:flex;align-items:center;flex:1;gap:0">
+              <span style="font-family:'Baloo 2',cursive;font-size:1.1rem;font-weight:700;color:var(--navy);padding:10px 12px;background:white;border:2px solid var(--rule);border-right:none;border-radius:10px 0 0 10px">$</span>
+              <input type="number" id="customAmt" placeholder="Other amount" min="1" oninput="selectCustom()" style="flex:1;padding:10px 14px;border:2px solid var(--rule);border-radius:0 10px 10px 0;font-family:'Nunito',sans-serif;font-size:0.95rem;font-weight:700;color:var(--text);outline:none;transition:border-color 0.2s" onfocus="this.style.borderColor='var(--blue)'" onblur="this.style.borderColor='var(--rule)'">
+            </div>
+          </div>
+
+          <!-- Frequency toggle -->
+          <div style="display:flex;gap:0;background:var(--warm);border:1px solid var(--rule);border-radius:50px;padding:4px;margin-bottom:24px;width:fit-content">
+            <button id="freqOnce" onclick="setFreq('once')" style="font-family:'Baloo 2',cursive;font-size:0.82rem;font-weight:700;padding:8px 22px;border:none;border-radius:50px;cursor:pointer;background:var(--navy);color:white;transition:all 0.2s">Give Once</button>
+            <button id="freqMonthly" onclick="setFreq('monthly')" style="font-family:'Baloo 2',cursive;font-size:0.82rem;font-weight:700;padding:8px 22px;border:none;border-radius:50px;cursor:pointer;background:transparent;color:var(--muted);transition:all 0.2s">Monthly</button>
+          </div>
+
+          <div id="monthlyNote" style="display:none;background:var(--blue-l);border:1px solid #bdd5ee;border-radius:12px;padding:13px 16px;font-size:0.84rem;color:var(--text);margin-bottom:24px;line-height:1.6">
+            💙 <strong>Monthly giving</strong> allows us to plan programs further ahead and serve more children. You can cancel any time.
+          </div>
+        </div>
+
+        <!-- RIGHT: FORM -->
+        <div class="fade">
+          <div style="background:white;border-radius:20px;padding:36px;border:1px solid var(--rule);position:sticky;top:80px">
+            <div style="font-family:'Baloo 2',cursive;font-size:1.25rem;font-weight:700;color:var(--navy);margin-bottom:4px">Your donation</div>
+            <div style="display:flex;align-items:baseline;gap:6px;margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid var(--rule)">
+              <span id="donateDisplay" style="font-family:'Baloo 2',cursive;font-size:2.8rem;font-weight:800;color:var(--coral);line-height:1">$50</span>
+              <span id="freqDisplay" style="font-size:0.84rem;font-weight:600;color:var(--muted)">/one-time</span>
+            </div>
+
+            <div class="fg"><label>First Name *</label><input type="text" placeholder="Maya"></div>
+            <div class="fg"><label>Last Name *</label><input type="text" placeholder="Chen"></div>
+            <div class="fg"><label>Email Address *</label><input type="email" placeholder="you@email.com"></div>
+            <div class="fg" style="margin-bottom:6px"><label>Card Number *</label>
+              <input type="text" placeholder="1234 5678 9012 3456" maxlength="19" oninput="fmtCard(this)">
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px">
+              <div class="fg" style="margin-bottom:0"><label>Expiry *</label><input type="text" placeholder="MM / YY" maxlength="7"></div>
+              <div class="fg" style="margin-bottom:0"><label>CVC *</label><input type="text" placeholder="123" maxlength="4"></div>
+            </div>
+            <div style="background:var(--warm);border-radius:10px;padding:11px 14px;font-size:0.78rem;color:var(--muted);display:flex;align-items:center;gap:8px;margin-bottom:18px">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--muted)" stroke-width="2" stroke-linecap="round">
+                <rect x="3" y="11" width="18" height="11" rx="2" />
+                <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+              </svg>
+              Secured by 256-bit SSL encryption. Your card is never stored.
+            </div>
+            <button onclick="submitDonate()" style="width:100%;padding:15px;background:var(--coral);color:white;font-family:'Baloo 2',cursive;font-size:1rem;font-weight:700;border:none;border-radius:50px;cursor:pointer;transition:all 0.22s;letter-spacing:0.01em" onmouseover="this.style.background='var(--coral-d)'" onmouseout="this.style.background='var(--coral)'">
+              Donate <span id="btnAmt">$50</span> →
+            </button>
+            <p style="font-size:0.73rem;text-align:center;margin-top:12px;line-height:1.6">Synap Kids is a registered 501(c)(3) nonprofit. EIN 12-3456789. All donations are tax-deductible to the extent provided by law.</p>
+
+            <div id="donateSuccess" style="display:none;text-align:center;padding:24px 0">
+              <div style="width:52px;height:52px;background:var(--coral);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 14px">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+              </div>
+              <div style="font-family:'Baloo 2',cursive;font-size:1.3rem;font-weight:700;color:var(--navy);margin-bottom:6px">Thank you so much!</div>
+              <p style="font-size:0.86rem">A receipt is on its way to your inbox. Your generosity makes this work possible.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- TESTIMONIAL / TRUST -->
+    <div style="background:var(--warm);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)">
+      <div class="section container">
+        <div class="fade" style="text-align:center;margin-bottom:36px">
+          <span class="tag tag-coral">Why It Matters</span>
+          <h2>Your dollars at <span class="hi-coral">work</span></h2>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px" class="fade">
+          <div style="background:white;border-radius:18px;padding:28px 24px;border:1px solid var(--rule)">
+            <div style="font-family:'Baloo 2',cursive;font-size:2.4rem;font-weight:800;color:var(--coral);margin-bottom:6px">100%</div>
+            <div style="font-family:'Baloo 2',cursive;font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:8px">Goes to Programs</div>
+            <p style="font-size:0.86rem;line-height:1.65">Administrative costs are covered by separate foundation grants, so every dollar you give funds direct services.</p>
+          </div>
+          <div style="background:white;border-radius:18px;padding:28px 24px;border:1px solid var(--rule)">
+            <div style="font-family:'Baloo 2',cursive;font-size:2.4rem;font-weight:800;color:var(--coral);margin-bottom:6px">8,200+</div>
+            <div style="font-family:'Baloo 2',cursive;font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:8px">Children Served</div>
+            <p style="font-size:0.86rem;line-height:1.65">Donors like you have helped us reach thousands of children with free brain health education, resources, and advocacy programs.</p>
+          </div>
+          <div style="background:white;border-radius:18px;padding:28px 24px;border:1px solid var(--rule)">
+            <div style="font-family:'Baloo 2',cursive;font-size:2.4rem;font-weight:800;color:var(--coral);margin-bottom:6px">501(c)(3)</div>
+            <div style="font-family:'Baloo 2',cursive;font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:8px">Tax-Deductible</div>
+            <p style="font-size:0.86rem;line-height:1.65">Synap Kids is a registered nonprofit. Every gift is fully tax-deductible and comes with an official receipt.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+</main>
+
+<!-- ══════ WATCH AN AD MODAL ══════ -->
+  <div id="adModal" style="display:none;position:fixed;inset:0;background:rgba(12,20,35,0.88);backdrop-filter:blur(6px);z-index:999;align-items:center;justify-content:center;padding:20px">
+    <div style="background:var(--navy);border-radius:22px;width:100%;max-width:620px;overflow:hidden;position:relative;box-shadow:0 24px 80px rgba(0,0,0,0.5)">
+
+      <!-- Header -->
+      <div style="padding:22px 28px 18px;border-bottom:1px solid rgba(255,255,255,0.08);display:flex;align-items:center;justify-content:space-between">
+        <div>
+          <div style="font-family:'Baloo 2',cursive;font-size:1.1rem;font-weight:700;color:white">Watch an Ad, Support Kids</div>
+          <div style="font-size:0.78rem;color:rgba(255,255,255,0.45);margin-top:2px">Every view generates a small donation to Synap Kids — at no cost to you</div>
+        </div>
+        <button onclick="closeAdModal()" id="adCloseBtn" disabled style="background:rgba(255,255,255,0.08);border:none;border-radius:50%;width:34px;height:34px;cursor:not-allowed;color:rgba(255,255,255,0.3);font-size:1rem;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all 0.2s">✕</button>
+      </div>
+
+      <!-- Ad player area -->
+      <div id="adPlayerArea" style="position:relative;background:#000;aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;overflow:hidden">
+
+        <!-- Fake ad content -->
+        <div id="adContent" style="width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;background:linear-gradient(135deg,#1a1a2e,#16213e,#0f3460);position:relative;overflow:hidden">
+          <!-- Decorative bg circles -->
+          <div style="position:absolute;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(59,130,196,0.15),transparent 70%);top:-80px;right:-80px;pointer-events:none"></div>
+          <div style="position:absolute;width:200px;height:200px;border-radius:50%;background:radial-gradient(circle,rgba(245,166,35,0.1),transparent 70%);bottom:-40px;left:-40px;pointer-events:none"></div>
+
+          <!-- Ad placeholder visual -->
+          <div style="text-align:center;padding:40px;position:relative;z-index:2">
+            <div style="width:64px;height:64px;border-radius:18px;background:rgba(255,255,255,0.1);border:1.5px solid rgba(255,255,255,0.15);display:flex;align-items:center;justify-content:center;margin:0 auto 16px">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="1.8" stroke-linecap="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" />
+                <line x1="8" y1="21" x2="16" y2="21" />
+                <line x1="12" y1="17" x2="12" y2="21" />
+              </svg>
+            </div>
+            <div style="font-family:'Baloo 2',cursive;font-size:1.1rem;font-weight:700;color:rgba(255,255,255,0.8);margin-bottom:6px">Advertisement</div>
+            <div style="font-size:0.82rem;color:rgba(255,255,255,0.35)">Brought to you by a Synap Kids partner</div>
+          </div>
+        </div>
+
+        <!-- Next button (disabled until countdown reaches 0) -->
+        <div id="adNextBtn" style="position:absolute;bottom:14px;right:14px">
+          <button id="adNextBtnEl" onclick="finishAdEarly()" disabled style="font-family:'Baloo 2',cursive;font-size:0.8rem;font-weight:700;padding:8px 18px;border-radius:8px;border:1.5px solid rgba(255,255,255,0.25);background:rgba(0,0,0,0.65);color:rgba(255,255,255,0.4);cursor:not-allowed;transition:all 0.25s;backdrop-filter:blur(4px)">
+            Next &rarr; <span id="skipCountdown" style="opacity:0.7">15</span>s
+          </button>
+        </div>
+
+        <!-- Progress bar -->
+        <div style="position:absolute;bottom:0;left:0;right:0;height:3px;background:rgba(255,255,255,0.1)">
+          <div id="adProgressBar" style="height:100%;width:0%;background:var(--coral);border-radius:2px;transition:width 0.25s linear"></div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div style="padding:20px 28px 24px">
+        <div id="adWatchingState">
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px">
+            <div style="width:8px;height:8px;border-radius:50%;background:var(--coral);animation:pulse 1.2s ease-in-out infinite;flex-shrink:0"></div>
+            <div style="font-size:0.84rem;color:rgba(255,255,255,0.55)">Ad revenue is being collected for Synap Kids while you watch…</div>
+          </div>
+          <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:13px 16px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px">
+            <div style="font-size:0.8rem;color:rgba(255,255,255,0.4)">Estimated donation this view</div>
+            <div style="font-family:'Baloo 2',cursive;font-size:1.1rem;font-weight:800;color:var(--gold)" id="adEarningDisplay">$0.00</div>
+          </div>
+        </div>
+
+        <!-- Completed state -->
+        <div id="adDoneState" style="display:none;text-align:center;padding:8px 0">
+          <div style="width:48px;height:48px;background:linear-gradient(135deg,#2E7D52,#3D9959);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 12px">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round">
+              <polyline points="20 6 9 17 4 12" />
+            </svg>
+          </div>
+          <div style="font-family:'Baloo 2',cursive;font-size:1.2rem;font-weight:700;color:white;margin-bottom:4px">Thank you! You just helped a kid. 💚</div>
+          <div style="font-size:0.84rem;color:rgba(255,255,255,0.5);margin-bottom:18px">Your view generated a donation of <strong style="color:var(--gold)" id="adFinalAmt">$0.02</strong> to Synap Kids.</div>
+          <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap">
+            <button onclick="replayAd()" style="font-family:'Baloo 2',cursive;font-size:0.88rem;font-weight:700;padding:10px 22px;border-radius:50px;border:2px solid rgba(255,255,255,0.25);background:transparent;color:rgba(255,255,255,0.7);cursor:pointer;transition:all 0.2s" onmouseover="this.style.borderColor='rgba(255,255,255,0.6)';this.style.color='white'" onmouseout="this.style.borderColor='rgba(255,255,255,0.25)';this.style.color='rgba(255,255,255,0.7)'">▶ Watch Another</button>
+            <button onclick="closeAdModal()" style="font-family:'Baloo 2',cursive;font-size:0.88rem;font-weight:700;padding:10px 22px;border-radius:50px;border:none;background:var(--coral);color:white;cursor:pointer;transition:opacity 0.2s" onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'">Done</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+<div id="footer-placeholder"></div>
+
+<script src="global.js"></script>
+</body>
+</html>
