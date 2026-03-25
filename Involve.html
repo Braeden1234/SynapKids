@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get Involved — Synap Kids</title>
+  <meta name="keywords" content="Braeden Belvedere, Synap Kids, Board of Directors, Chief Technology Officer, Pediatric Neurology, Activist">
+  <link rel="canonical" href="https://synapkids.belvederetechnologies.com/involve.html">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="global.css">
+</head>
+<body>
+
+<div id="navbar-placeholder"></div>
+
+<main>
+<!-- ══════ GET INVOLVED ══════ -->
+  <div class="page" id="pg-involve">
+    <div class="pg-hero fade">
+      <div class="ph-blob1"></div>
+      <div class="ph-blob2"></div>
+      <div style="position:relative;z-index:2">
+        <span class="tag tag-navy">Get Involved</span>
+        <h1>Ready to <span>join the movement?</span></h1>
+        <p>Whether you want to start a chapter, join one, or step into a leadership role — there is a place for you here. Choose what fits you best below.</p>
+      </div>
+    </div>
+    <div class="section container">
+      <div class="fade">
+        <span class="tag tag-blue">Choose Your Path</span>
+        <h2>How do you want to <span class="hi-coral">get involved?</span></h2>
+        <div class="gi-options">
+          <button class="gi-opt sel" onclick="showGiForm('chapter',this)">
+            <div class="gi-opt-icon" style="background:var(--coral-l)"><svg viewBox="0 0 24 24" style="stroke:var(--coral)">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                <polyline points="9 22 9 12 15 12 15 22" />
+              </svg></div>
+            <div class="gi-opt-title">Start a Chapter</div>
+            <p class="gi-opt-desc">Launch a Synap Kids chapter in your school, district, or community. We provide everything — you bring the heart.</p>
+          </button>
+          <button class="gi-opt" onclick="showGiForm('exec',this)">
+            <div class="gi-opt-icon" style="background:var(--blue-l)"><svg viewBox="0 0 24 24" style="stroke:var(--blue)">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+              </svg></div>
+            <div class="gi-opt-title">Executive Application</div>
+            <p class="gi-opt-desc">Apply to join the national Synap Kids executive team. Open to students and young professionals under 25.</p>
+          </button>
+          <button class="gi-opt" onclick="showGiForm('join',this)">
+            <div class="gi-opt-icon" style="background:var(--mint)"><svg viewBox="0 0 24 24" style="stroke:#2E7D52">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg></div>
+            <div class="gi-opt-title">Join an Existing Chapter</div>
+            <p class="gi-opt-desc">Find a chapter already running in your area and sign up as a volunteer, member, or peer mentor.</p>
+          </button>
+        </div>
+      </div>
+
+      <!-- START A CHAPTER FORM -->
+      <div class="gi-form-area show" id="gi-chapter">
+        <div style="max-width:760px;margin:0 auto">
+          <div style="margin-bottom:32px">
+            <h3 style="font-size:1.5rem;margin-bottom:6px">Start a Chapter Application</h3>
+            <p>We review every application within 5 business days and follow up personally. Takes about 10 minutes.</p>
+          </div>
+          <div class="form-card" id="formCard">
+            <div class="prog-wrap">
+              <div class="prog-lbl" id="stepLbl">Step 1 of 3 — About You</div>
+              <div class="prog-track">
+                <div class="prog-fill" id="progFill" style="width:33%"></div>
+              </div>
+            </div>
+            <div id="step1">
+              <div class="form-head">About You</div>
+              <div class="form-row">
+                <div class="fg"><label>First Name *</label><input type="text" placeholder="Maya"></div>
+                <div class="fg"><label>Last Name *</label><input type="text" placeholder="Chen"></div>
+              </div>
+              <div class="form-row">
+                <div class="fg"><label>Email Address *</label><input type="email" placeholder="you@email.com"></div>
+                <div class="fg"><label>Age</label><input type="number" placeholder="21" min="14" max="30"></div>
+              </div>
+              <div class="form-row">
+                <div class="fg"><label>Your Role *</label><select>
+                    <option value="">Select…</option>
+                    <option>Student (high school)</option>
+                    <option>Student (college/university)</option>
+                    <option>Recent Graduate</option>
+                    <option>Parent or Caregiver</option>
+                    <option>Teacher or Educator</option>
+                    <option>School Counselor</option>
+                    <option>Community Organizer</option>
+                    <option>Other</option>
+                  </select></div>
+                <div class="fg"><label>Experience with Youth</label><select>
+                    <option>Less than 1 year</option>
+                    <option>1–3 years</option>
+                    <option>3–5 years</option>
+                    <option>5+ years</option>
+                  </select></div>
+              </div>
+              <div class="form-foot" style="justify-content:flex-end"><button class="btn btn-coral" onclick="toStep(2)">Next — Your Community</button></div>
+            </div>
+            <div id="step2" style="display:none">
+              <div class="form-head">Your Community</div>
+              <div class="form-row">
+                <div class="fg"><label>City *</label><input type="text" placeholder="Detroit"></div>
+                <div class="fg"><label>State *</label><input type="text" placeholder="Michigan"></div>
+              </div>
+              <div class="form-row">
+                <div class="fg"><label>Country *</label><input type="text" placeholder="United States"></div>
+                <div class="fg"><label>Chapter Setting *</label><select>
+                    <option value="">Select…</option>
+                    <option>Elementary School</option>
+                    <option>Middle School</option>
+                    <option>High School</option>
+                    <option>School District</option>
+                    <option>Community Center</option>
+                    <option>Healthcare / Hospital</option>
+                    <option>University or College</option>
+                    <option>Faith Community</option>
+                    <option>Nonprofit Organization</option>
+                    <option>Other</option>
+                  </select></div>
+              </div>
+              <div class="fg"><label>Age Groups Your Chapter Will Focus On *</label>
+                <div class="check-list"><label class="chk"><input type="checkbox"> Early Childhood (ages 3–6)</label><label class="chk"><input type="checkbox"> Elementary (ages 6–10)</label><label class="chk"><input type="checkbox"> Middle School (ages 11–13)</label><label class="chk"><input type="checkbox"> High School (ages 14–18)</label></div>
+              </div>
+              <div class="form-foot"><button class="btn btn-outline" onclick="toStep(1)">Back</button><button class="btn btn-coral" onclick="toStep(3)">Next — Your Vision</button></div>
+            </div>
+            <div id="step3" style="display:none">
+              <div class="form-head">Your Vision</div>
+              <div class="fg"><label>Why do you want to start a chapter? *</label><textarea id="whyField" placeholder="Tell us about your motivation, your community's needs, and what you hope to achieve…" oninput="countChars('whyField','whyC',500)"></textarea>
+                <div class="char-note"><span id="whyC">0</span> / 500</div>
+              </div>
+              <div class="fg"><label>Any relevant experience?</label><textarea placeholder="Programs you have run, clubs you have led, volunteer work…" style="height:90px"></textarea></div>
+              <div class="fg"><label>How did you hear about Synap Kids?</label><select>
+                  <option>Social Media</option>
+                  <option>Friend or Colleague</option>
+                  <option>Search Engine</option>
+                  <option>School or Workplace</option>
+                  <option>News or Media</option>
+                  <option>Other</option>
+                </select></div>
+              <div class="agree-box"><input type="checkbox" id="agreeBox"><label for="agreeBox">I agree to the <a href="#">Synap Kids Chapter Guidelines</a> and commit to upholding our values of inclusivity, evidence-based practice, and child safety. *</label></div>
+              <div class="form-foot"><button class="btn btn-outline" onclick="toStep(2)">Back</button><button class="btn btn-coral" onclick="submitApp()">Submit Application</button></div>
+            </div>
+          </div>
+          <div class="success-card" id="successCard">
+            <div class="success-circle"><svg viewBox="0 0 24 24">
+                <polyline points="20 6 9 17 4 12" />
+              </svg></div>
+            <h2>Application Received!</h2>
+            <p>Thank you for applying. Our team will reach out within <strong>5 business days</strong> to schedule your intro call.</p>
+            <div class="success-btns"><a class="btn btn-coral" href="#" onclick="go('home')">Back to Home</a><a class="btn btn-outline" href="#" onclick="go('programs')">Explore Programs</a></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- EXECUTIVE APPLICATION -->
+      <div class="gi-form-area" id="gi-exec">
+        <div style="max-width:760px;margin:0 auto">
+          <div style="margin-bottom:32px">
+            <h3 style="font-size:1.5rem;margin-bottom:6px">Executive Team Application</h3>
+            <p>We are a youth-led organization and actively recruit young people into national leadership. Open to anyone under 25 with passion and drive.</p>
+          </div>
+          <div class="form-card">
+            <div class="form-head">Personal Information</div>
+            <div class="form-row">
+              <div class="fg"><label>First Name *</label><input type="text"></div>
+              <div class="fg"><label>Last Name *</label><input type="text"></div>
+            </div>
+            <div class="form-row">
+              <div class="fg"><label>Email Address *</label><input type="email"></div>
+              <div class="fg"><label>Age *</label><input type="number" min="16" max="30"></div>
+            </div>
+            <div class="form-row">
+              <div class="fg"><label>City &amp; State</label><input type="text" placeholder="Detroit, MI"></div>
+              <div class="fg"><label>School / University</label><input type="text" placeholder="University of Michigan"></div>
+            </div>
+            <div class="form-head">Role Interest</div>
+            <div class="fg"><label>Which areas interest you? *</label>
+              <div class="check-list"><label class="chk"><input type="checkbox"> Executive / Operations</label><label class="chk"><input type="checkbox"> Communications &amp; Social Media</label><label class="chk"><input type="checkbox"> Chapter Expansion &amp; Partnerships</label><label class="chk"><input type="checkbox"> Curriculum &amp; Education</label><label class="chk"><input type="checkbox"> Design &amp; Creative</label><label class="chk"><input type="checkbox"> Research &amp; Clinical</label></div>
+            </div>
+            <div class="fg"><label>Why do you want to join the Synap Kids executive team? *</label><textarea placeholder="Tell us what draws you to this work and what you would bring to the team…" oninput="countChars(this,'ec',600)"></textarea>
+              <div class="char-note"><span id="ec">0</span> / 600</div>
+            </div>
+            <div class="fg"><label>Share a relevant experience, project, or achievement</label><textarea style="height:96px" placeholder="This could be a program you built, a campaign you ran, something you are proud of…"></textarea></div>
+            <div class="fg"><label>LinkedIn or Portfolio URL (optional)</label><input type="url" placeholder="https://"></div>
+            <div class="agree-box"><input type="checkbox" id="execAgree"><label for="execAgree">I confirm I am between 16 and 25 years old and commit to Synap Kids' values of equity, evidence-based practice, and youth empowerment. *</label></div>
+            <div class="form-foot" style="justify-content:flex-end"><button class="btn btn-blue" onclick="submitExec()">Submit Executive Application</button></div>
+          </div>
+          <div class="success-card" id="execSuccess">
+            <div class="success-circle" style="background:var(--blue)"><svg viewBox="0 0 24 24">
+                <polyline points="20 6 9 17 4 12" />
+              </svg></div>
+            <h2>Application Submitted!</h2>
+            <p>We are excited to learn more about you. Our hiring team reviews applications on a rolling basis and will be in touch within <strong>2 weeks</strong>.</p>
+            <div class="success-btns"><a class="btn btn-blue" href="#" onclick="go('staff')">Meet the Current Team</a><a class="btn btn-outline" href="#" onclick="go('home')">Back to Home</a></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- JOIN EXISTING CHAPTER -->
+      <div class="gi-form-area" id="gi-join">
+        <div class="fade">
+          <h3 style="font-size:1.5rem;margin-bottom:8px">Find a Chapter Near You</h3>
+          <p style="margin-bottom:28px">Browse active chapters and request to join as a volunteer, member, or peer mentor.</p>
+          <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:32px">
+            <input type="text" id="chapterSearch" placeholder="Search by city, state, or school…" oninput="filterChapters()" style="flex:1;min-width:220px;padding:11px 16px;border:2px solid var(--rule);border-radius:50px;font-family:'Nunito',sans-serif;font-size:0.9rem;outline:none;transition:border-color 0.2s" onfocus="this.style.borderColor='var(--blue)'" onblur="this.style.borderColor='var(--rule)'">
+            <select id="stateFilter" onchange="filterChapters()" style="padding:11px 16px;border:2px solid var(--rule);border-radius:50px;font-family:'Nunito',sans-serif;font-size:0.88rem;font-weight:700;background:white;color:var(--text);outline:none;cursor:pointer">
+              <option value="">All States</option>
+              <option>Michigan</option>
+              <option>Texas</option>
+              <option>California</option>
+              <option>Illinois</option>
+              <option>Ohio</option>
+              <option>Georgia</option>
+              <option>New York</option>
+              <option>Florida</option>
+            </select>
+          </div>
+          <div class="join-existing-grid" id="chapterListings">
+            <div class="chapter-listing">
+              <div class="cl-state">Michigan</div>
+              <div class="cl-name">Pontiac Community Chapter</div>
+              <div class="cl-info">Serving K–8 students at Jefferson Elementary and Lincoln Middle School. Active since 2024.</div>
+              <div class="cl-tags"><span class="cl-tag">In-Person</span><span class="cl-tag">K–8</span><span class="cl-tag">Recruiting</span></div><button class="btn btn-coral" style="font-size:0.82rem;padding:9px 20px" onclick="alert('Request sent! The chapter leader will email you within 3 days.')">Request to Join</button>
+            </div>
+            <div class="chapter-listing">
+              <div class="cl-state">Michigan</div>
+              <div class="cl-name">Detroit Metro Chapter</div>
+              <div class="cl-info">Running the peer mentor program across 4 Detroit high schools. Looking for college volunteers.</div>
+              <div class="cl-tags"><span class="cl-tag">High School</span><span class="cl-tag">Peer Mentoring</span><span class="cl-tag">Recruiting</span></div><button class="btn btn-coral" style="font-size:0.82rem;padding:9px 20px" onclick="alert('Request sent! The chapter leader will email you within 3 days.')">Request to Join</button>
+            </div>
+            <div class="chapter-listing">
+              <div class="cl-state">Texas</div>
+              <div class="cl-name">Houston Heights Chapter</div>
+              <div class="cl-info">Family wellness workshops every other Saturday at the Heights Community Library. All ages welcome.</div>
+              <div class="cl-tags"><span class="cl-tag">Workshops</span><span class="cl-tag">All Ages</span><span class="cl-tag">Recruiting</span></div><button class="btn btn-coral" style="font-size:0.82rem;padding:9px 20px" onclick="alert('Request sent! The chapter leader will email you within 3 days.')">Request to Join</button>
+            </div>
+            <div class="chapter-listing">
+              <div class="cl-state">Illinois</div>
+              <div class="cl-name">Chicago South Side Chapter</div>
+              <div class="cl-info">School program running in 3 CPS elementary schools. Seeking education volunteers and curriculum helpers.</div>
+              <div class="cl-tags"><span class="cl-tag">In-Person</span><span class="cl-tag">Elementary</span><span class="cl-tag">Recruiting</span></div><button class="btn btn-coral" style="font-size:0.82rem;padding:9px 20px" onclick="alert('Request sent! The chapter leader will email you within 3 days.')">Request to Join</button>
+            </div>
+            <div class="chapter-listing">
+              <div class="cl-state">California</div>
+              <div class="cl-name">Oakland Unified Chapter</div>
+              <div class="cl-info">Embedded in Oakland Unified School District serving 6 schools. Seeking bilingual volunteers (Spanish/English).</div>
+              <div class="cl-tags"><span class="cl-tag">K–12</span><span class="cl-tag">Bilingual</span><span class="cl-tag">Recruiting</span></div><button class="btn btn-coral" style="font-size:0.82rem;padding:9px 20px" onclick="alert('Request sent! The chapter leader will email you within 3 days.')">Request to Join</button>
+            </div>
+            <div class="chapter-listing">
+              <div class="cl-state">Georgia</div>
+              <div class="cl-name">Atlanta Youth Chapter</div>
+              <div class="cl-info">Youth-only leadership team running summer camp and peer mentor programs across metro Atlanta.</div>
+              <div class="cl-tags"><span class="cl-tag">Youth-Led</span><span class="cl-tag">Summer</span><span class="cl-tag">Recruiting</span></div><button class="btn btn-coral" style="font-size:0.82rem;padding:9px 20px" onclick="alert('Request sent! The chapter leader will email you within 3 days.')">Request to Join</button>
+            </div>
+          </div>
+          <div id="noChapters" style="display:none;padding:40px 0;text-align:center;color:var(--muted)"><strong style="font-family:'Baloo 2',cursive;font-size:1.2rem;color:var(--navy);display:block;margin-bottom:6px">No chapters found</strong>No chapter matches that search yet — but you could be the first!<div style="margin-top:16px"><button class="btn btn-coral" onclick="showGiForm('chapter',document.querySelector('.gi-opt'))">Start a Chapter</button></div>
+          </div>
+          <p style="margin-top:28px;font-size:0.86rem">Don't see your area? <a href="#" onclick="showGiForm('chapter',document.querySelectorAll('.gi-opt')[0])" style="color:var(--coral);font-weight:700;text-decoration:underline">Start a chapter</a> and become the first leader in your community.</p>
+        </div>
+      </div>
+    </div>
+</main>
+
+<!-- ══════ WATCH AN AD MODAL ══════ -->
+  <div id="adModal" style="display:none;position:fixed;inset:0;background:rgba(12,20,35,0.88);backdrop-filter:blur(6px);z-index:999;align-items:center;justify-content:center;padding:20px">
+    <div style="background:var(--navy);border-radius:22px;width:100%;max-width:620px;overflow:hidden;position:relative;box-shadow:0 24px 80px rgba(0,0,0,0.5)">
+
+      <!-- Header -->
+      <div style="padding:22px 28px 18px;border-bottom:1px solid rgba(255,255,255,0.08);display:flex;align-items:center;justify-content:space-between">
+        <div>
+          <div style="font-family:'Baloo 2',cursive;font-size:1.1rem;font-weight:700;color:white">Watch an Ad, Support Kids</div>
+          <div style="font-size:0.78rem;color:rgba(255,255,255,0.45);margin-top:2px">Every view generates a small donation to Synap Kids — at no cost to you</div>
+        </div>
+        <button onclick="closeAdModal()" id="adCloseBtn" disabled style="background:rgba(255,255,255,0.08);border:none;border-radius:50%;width:34px;height:34px;cursor:not-allowed;color:rgba(255,255,255,0.3);font-size:1rem;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all 0.2s">✕</button>
+      </div>
+
+      <!-- Ad player area -->
+      <div id="adPlayerArea" style="position:relative;background:#000;aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;overflow:hidden">
+
+        <!-- Fake ad content -->
+        <div id="adContent" style="width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;background:linear-gradient(135deg,#1a1a2e,#16213e,#0f3460);position:relative;overflow:hidden">
+          <!-- Decorative bg circles -->
+          <div style="position:absolute;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(59,130,196,0.15),transparent 70%);top:-80px;right:-80px;pointer-events:none"></div>
+          <div style="position:absolute;width:200px;height:200px;border-radius:50%;background:radial-gradient(circle,rgba(245,166,35,0.1),transparent 70%);bottom:-40px;left:-40px;pointer-events:none"></div>
+
+          <!-- Ad placeholder visual -->
+          <div style="text-align:center;padding:40px;position:relative;z-index:2">
+            <div style="width:64px;height:64px;border-radius:18px;background:rgba(255,255,255,0.1);border:1.5px solid rgba(255,255,255,0.15);display:flex;align-items:center;justify-content:center;margin:0 auto 16px">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="1.8" stroke-linecap="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" />
+                <line x1="8" y1="21" x2="16" y2="21" />
+                <line x1="12" y1="17" x2="12" y2="21" />
+              </svg>
+            </div>
+            <div style="font-family:'Baloo 2',cursive;font-size:1.1rem;font-weight:700;color:rgba(255,255,255,0.8);margin-bottom:6px">Advertisement</div>
+            <div style="font-size:0.82rem;color:rgba(255,255,255,0.35)">Brought to you by a Synap Kids partner</div>
+          </div>
+        </div>
+
+        <!-- Next button (disabled until countdown reaches 0) -->
+        <div id="adNextBtn" style="position:absolute;bottom:14px;right:14px">
+          <button id="adNextBtnEl" onclick="finishAdEarly()" disabled style="font-family:'Baloo 2',cursive;font-size:0.8rem;font-weight:700;padding:8px 18px;border-radius:8px;border:1.5px solid rgba(255,255,255,0.25);background:rgba(0,0,0,0.65);color:rgba(255,255,255,0.4);cursor:not-allowed;transition:all 0.25s;backdrop-filter:blur(4px)">
+            Next &rarr; <span id="skipCountdown" style="opacity:0.7">15</span>s
+          </button>
+        </div>
+
+        <!-- Progress bar -->
+        <div style="position:absolute;bottom:0;left:0;right:0;height:3px;background:rgba(255,255,255,0.1)">
+          <div id="adProgressBar" style="height:100%;width:0%;background:var(--coral);border-radius:2px;transition:width 0.25s linear"></div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div style="padding:20px 28px 24px">
+        <div id="adWatchingState">
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px">
+            <div style="width:8px;height:8px;border-radius:50%;background:var(--coral);animation:pulse 1.2s ease-in-out infinite;flex-shrink:0"></div>
+            <div style="font-size:0.84rem;color:rgba(255,255,255,0.55)">Ad revenue is being collected for Synap Kids while you watch…</div>
+          </div>
+          <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:13px 16px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px">
+            <div style="font-size:0.8rem;color:rgba(255,255,255,0.4)">Estimated donation this view</div>
+            <div style="font-family:'Baloo 2',cursive;font-size:1.1rem;font-weight:800;color:var(--gold)" id="adEarningDisplay">$0.00</div>
+          </div>
+        </div>
+
+        <!-- Completed state -->
+        <div id="adDoneState" style="display:none;text-align:center;padding:8px 0">
+          <div style="width:48px;height:48px;background:linear-gradient(135deg,#2E7D52,#3D9959);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 12px">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round">
+              <polyline points="20 6 9 17 4 12" />
+            </svg>
+          </div>
+          <div style="font-family:'Baloo 2',cursive;font-size:1.2rem;font-weight:700;color:white;margin-bottom:4px">Thank you! You just helped a kid. 💚</div>
+          <div style="font-size:0.84rem;color:rgba(255,255,255,0.5);margin-bottom:18px">Your view generated a donation of <strong style="color:var(--gold)" id="adFinalAmt">$0.02</strong> to Synap Kids.</div>
+          <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap">
+            <button onclick="replayAd()" style="font-family:'Baloo 2',cursive;font-size:0.88rem;font-weight:700;padding:10px 22px;border-radius:50px;border:2px solid rgba(255,255,255,0.25);background:transparent;color:rgba(255,255,255,0.7);cursor:pointer;transition:all 0.2s" onmouseover="this.style.borderColor='rgba(255,255,255,0.6)';this.style.color='white'" onmouseout="this.style.borderColor='rgba(255,255,255,0.25)';this.style.color='rgba(255,255,255,0.7)'">▶ Watch Another</button>
+            <button onclick="closeAdModal()" style="font-family:'Baloo 2',cursive;font-size:0.88rem;font-weight:700;padding:10px 22px;border-radius:50px;border:none;background:var(--coral);color:white;cursor:pointer;transition:opacity 0.2s" onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'">Done</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+<div id="footer-placeholder"></div>
+
+<script src="global.js"></script>
+</body>
+</html>
