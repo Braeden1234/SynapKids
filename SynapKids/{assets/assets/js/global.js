@@ -468,18 +468,18 @@ document.addEventListener('DOMContentLoaded', () => {
    ARTICLES PAGE
 ───────────────────────────────────────────── */
 const ARTS = [
-  { id: 1, cat: 'anxiety', title: 'Why Kids Worry: A Brain-Based Explanation', excerpt: 'Understanding the amygdala helps us respond to anxious children with more empathy and less frustration.', author: 'Dr. James Rivera', initials: 'JR', ac: '#7B54C8', date: 'Mar 12, 2026', min: 5, cc: '#2B6CB8' },
-  { id: 2, cat: 'parenting', title: 'Five Ways to Talk to Your Child About Big Feelings', excerpt: 'Simple, science-backed conversation starters that build emotional vocabulary and trust between parent and child.', author: 'Sam Torres', initials: 'ST', ac: '#2B7A3D', date: 'Mar 8, 2026', min: 4, cc: '#E05B42' },
-  { id: 3, cat: 'mindfulness', title: 'Breathing Exercises That Actually Work for Kids', excerpt: 'Four evidence-based techniques for children ages 5–12, with tips on making them stick as daily habits.', author: 'Dr. Leila Okonkwo', initials: 'LO', ac: '#3D9959', date: 'Feb 28, 2026', min: 3, cc: '#3B82C4' },
-  { id: 4, cat: 'neuroscience', title: 'The Developing Brain: Ages 6–12 Explained', excerpt: "A parent-friendly guide to what's happening in your child's brain during middle childhood — and why it matters.", author: 'Dr. Sophie Nakamura', initials: 'SN', ac: '#C4883B', date: 'Feb 20, 2026', min: 7, cc: '#7B54C8' },
-  { id: 5, cat: 'emotions', title: 'Teaching Kids the Emotional Color Wheel', excerpt: 'How to use color-coded emotion charts to help children identify nuanced feelings beyond "happy" and "sad."', author: 'Priya Patel', initials: 'PP', ac: '#9B5CD6', date: 'Feb 14, 2026', min: 4, cc: '#C4883B' },
-  { id: 6, cat: 'school', title: 'How to Support an Anxious Child at School', excerpt: 'Practical strategies for teachers and school counselors — from morning routines to de-escalation.', author: 'Marcus Webb', initials: 'MW', ac: '#2B6CB8', date: 'Feb 7, 2026', min: 6, cc: '#3B82C4' },
-  { id: 7, cat: 'anxiety', title: 'When Worry Becomes a Problem: Signs to Watch For', excerpt: 'The difference between normal childhood worry and clinical anxiety — and what to do when things escalate.', author: 'Dr. Amir Hassan', initials: 'AH', ac: '#C84D33', date: 'Jan 30, 2026', min: 5, cc: '#E05B42' },
-  { id: 8, cat: 'parenting', title: 'Screen Time and Emotional Health: The Real Picture', excerpt: "Moving past the panic — a nuanced look at what research actually says about screens and children's wellbeing.", author: 'Dr. Sophie Nakamura', initials: 'SN', ac: '#C4883B', date: 'Jan 22, 2026', min: 6, cc: '#E05B42' },
-  { id: 9, cat: 'emotions', title: 'Grief in Children: What It Looks Like, How to Help', excerpt: 'Children grieve differently than adults. Understanding those differences is the first step toward meaningful support.', author: 'Dr. Maya Chen', initials: 'MC', ac: '#3B82C4', date: 'Jan 15, 2026', min: 7, cc: '#7B54C8' },
-  { id: 10, cat: 'neuroscience', title: "Stress Hormones and the Child's Brain", excerpt: 'Cortisol, adrenaline, and oxytocin — how stress chemistry shapes learning, behavior, and emotional resilience.', author: 'Dr. James Rivera', initials: 'JR', ac: '#7B54C8', date: 'Jan 8, 2026', min: 8, cc: '#7B54C8' },
-  { id: 11, cat: 'mindfulness', title: 'The 5-4-3-2-1 Grounding Technique for Kids', excerpt: 'Step-by-step guide to teaching this sensory grounding exercise in an age-appropriate, engaging way.', author: 'Grace Kimani', initials: 'GK', ac: '#C84D33', date: 'Dec 20, 2025', min: 3, cc: '#3B82C4' },
-  { id: 12, cat: 'school', title: 'Building Emotional Safety in the Classroom', excerpt: 'How educators can create conditions where every student feels safe enough to learn, take risks, and be themselves.', author: 'Marcus Webb', initials: 'MW', ac: '#2B6CB8', date: 'Dec 12, 2025', min: 5, cc: '#3B82C4' },
+  { id: 1, cat: 'anxiety', title: 'Why Kids Worry: A Brain-Based Explanation', excerpt: 'Understanding the amygdala helps us respond to anxious children with more empathy and less frustration.', author: 'Dr. James Rivera', initials: 'JR', ac: '#7B54C8', date: 'Mar 12, 2026', min: 5, cc: '#2B6CB8', pdf: "https://www.w3.org/WAI/WCAG21/Techniques/pdf/sample.pdf" },
+  { id: 2, cat: 'parenting', title: 'Five Ways to Talk to Your Child About Big Feelings', excerpt: 'Simple, science-backed conversation starters that build emotional vocabulary and trust between parent and child.', author: 'Sam Torres', initials: 'ST', ac: '#2B7A3D', date: 'Mar 8, 2026', min: 4, cc: '#E05B42', pdf: "https://www.w3.org/WAI/WCAG21/Techniques/pdf/sample.pdf" },
+  { id: 3, cat: 'mindfulness', title: 'Breathing Exercises That Actually Work for Kids', excerpt: 'Four evidence-based techniques for children ages 5–12, with tips on making them stick as daily habits.', author: 'Dr. Leila Okonkwo', initials: 'LO', ac: '#3D9959', date: 'Feb 28, 2026', min: 3, cc: '#3B82C4', pdf: "https://www.w3.org/WAI/WCAG21/Techniques/pdf/sample.pdf" },
+  { id: 4, cat: 'neuroscience', title: 'The Developing Brain: Ages 6–12 Explained', excerpt: "A parent-friendly guide to what's happening in your child's brain during middle childhood — and why it matters.", author: 'Dr. Sophie Nakamura', initials: 'SN', ac: '#C4883B', date: 'Feb 20, 2026', min: 7, cc: '#7B54C8', pdf: "https://www.w3.org/WAI/WCAG21/Techniques/pdf/sample.pdf" },
+  { id: 5, cat: 'emotions', title: 'Teaching Kids the Emotional Color Wheel', excerpt: 'How to use color-coded emotion charts to help children identify nuanced feelings beyond "happy" and "sad."', author: 'Priya Patel', initials: 'PP', ac: '#9B5CD6', date: 'Feb 14, 2026', min: 4, cc: '#C4883B', pdf: "https://www.w3.org/WAI/WCAG21/Techniques/pdf/sample.pdf" },
+  { id: 6, cat: 'school', title: 'How to Support an Anxious Child at School', excerpt: 'Practical strategies for teachers and school counselors — from morning routines to de-escalation.', author: 'Marcus Webb', initials: 'MW', ac: '#2B6CB8', date: 'Feb 7, 2026', min: 6, cc: '#3B82C4', pdf: "https://www.w3.org/WAI/WCAG21/Techniques/pdf/sample.pdf" },
+  { id: 7, cat: 'anxiety', title: 'When Worry Becomes a Problem: Signs to Watch For', excerpt: 'The difference between normal childhood worry and clinical anxiety — and what to do when things escalate.', author: 'Dr. Amir Hassan', initials: 'AH', ac: '#C84D33', date: 'Jan 30, 2026', min: 5, cc: '#E05B42', pdf: "https://www.w3.org/WAI/WCAG21/Techniques/pdf/sample.pdf" },
+  { id: 8, cat: 'parenting', title: 'Screen Time and Emotional Health: The Real Picture', excerpt: "Moving past the panic — a nuanced look at what research actually says about screens and children's wellbeing.", author: 'Dr. Sophie Nakamura', initials: 'SN', ac: '#C4883B', date: 'Jan 22, 2026', min: 6, cc: '#E05B42', pdf: "https://www.w3.org/WAI/WCAG21/Techniques/pdf/sample.pdf" },
+  { id: 9, cat: 'emotions', title: 'Grief in Children: What It Looks Like, How to Help', excerpt: 'Children grieve differently than adults. Understanding those differences is the first step toward meaningful support.', author: 'Dr. Maya Chen', initials: 'MC', ac: '#3B82C4', date: 'Jan 15, 2026', min: 7, cc: '#7B54C8', pdf: "https://www.w3.org/WAI/WCAG21/Techniques/pdf/sample.pdf" },
+  { id: 10, cat: 'neuroscience', title: "Stress Hormones and the Child's Brain", excerpt: 'Cortisol, adrenaline, and oxytocin — how stress chemistry shapes learning, behavior, and emotional resilience.', author: 'Dr. James Rivera', initials: 'JR', ac: '#7B54C8', date: 'Jan 8, 2026', min: 8, cc: '#7B54C8', pdf: "https://www.w3.org/WAI/WCAG21/Techniques/pdf/sample.pdf" },
+  { id: 11, cat: 'mindfulness', title: 'The 5-4-3-2-1 Grounding Technique for Kids', excerpt: 'Step-by-step guide to teaching this sensory grounding exercise in an age-appropriate, engaging way.', author: 'Grace Kimani', initials: 'GK', ac: '#C84D33', date: 'Dec 20, 2025', min: 3, cc: '#3B82C4', pdf: "https://www.w3.org/WAI/WCAG21/Techniques/pdf/sample.pdf" },
+  { id: 12, cat: 'school', title: 'Building Emotional Safety in the Classroom', excerpt: 'How educators can create conditions where every student feels safe enough to learn, take risks, and be themselves.', author: 'Marcus Webb', initials: 'MW', ac: '#2B6CB8', date: 'Dec 12, 2025', min: 5, cc: '#3B82C4', pdf: "https://www.w3.org/WAI/WCAG21/Techniques/pdf/sample.pdf" },
 ];
 
 const CATMAP = { anxiety: 'Anxiety', emotions: 'Emotions', parenting: 'Parenting', mindfulness: 'Mindfulness', neuroscience: 'Neuroscience', school: 'School' };
@@ -512,7 +512,7 @@ function renderArts() {
   if (!grid) return;
   if (cnt) cnt.textContent = list.length ? `Showing ${list.length} article${list.length !== 1 ? 's' : ''}` : 'No articles found';
   grid.innerHTML = list.length ? list.map(a => `
-    <div class="art-card fade in">
+    <div class="art-card fade in" onclick="openArticlePdf(a.title,a.author+' · '+a.date,a.pdf||null)" style="cursor:pointer">
       <div class="ac-top" style="background:${a.cc}"></div>
       <div class="ac-body">
         <div class="ac-tags"><span class="ac-cat" style="background:${a.cc}">${CATMAP[a.cat]}</span><span class="ac-time">${a.min} min read</span></div>
@@ -656,3 +656,124 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   if (document.getElementById('sponsorTable')) buildSponsorTable();
 });
+
+/* ─────────────────────────────────────────────
+   PDF ARTICLE VIEWER
+───────────────────────────────────────────── */
+if (typeof pdfjsLib !== 'undefined') {
+  pdfjsLib.GlobalWorkerOptions.workerSrc =
+    'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+}
+
+let _pdfDoc = null;
+
+function openArticlePdf(title, author, pdfUrl) {
+  const modal   = document.getElementById('pdfModal');
+  if (!modal) return;
+  const loader  = document.getElementById('pdfLoader');
+  const errEl   = document.getElementById('pdfError');
+  const wrap    = document.getElementById('pdfCanvasWrap');
+  const pgInfo  = document.getElementById('pdfPageInfo');
+  const scrollA = document.getElementById('pdfScrollArea');
+
+  document.getElementById('pdfModalTitle').textContent  = title;
+  document.getElementById('pdfModalAuthor').textContent = author;
+
+  loader.style.display = 'flex';
+  errEl.style.display  = 'none';
+  wrap.style.display   = 'none';
+  wrap.innerHTML = '';
+  pgInfo.textContent = '';
+  scrollA.scrollTop  = 0;
+  modal.classList.add('open');
+  document.body.style.overflow = 'hidden';
+
+  if (!pdfUrl || typeof pdfjsLib === 'undefined') {
+    loader.style.display = 'none';
+    errEl.style.display  = 'flex';
+    return;
+  }
+
+  pdfjsLib.getDocument(pdfUrl).promise.then(function(pdf) {
+    _pdfDoc = pdf;
+    pgInfo.textContent = pdf.numPages + ' page' + (pdf.numPages !== 1 ? 's' : '');
+    loader.style.display = 'none';
+    wrap.style.display   = 'flex';
+    for (var i = 1; i <= pdf.numPages; i++) {
+      (function(pageNum) {
+        var canvas = document.createElement('canvas');
+        canvas.className = 'pdf-page-canvas';
+        wrap.appendChild(canvas);
+        renderPdfPage(pdf, pageNum, canvas);
+      })(i);
+    }
+  }).catch(function() {
+    loader.style.display = 'none';
+    errEl.style.display  = 'flex';
+  });
+}
+
+function renderPdfPage(pdf, num, canvas) {
+  pdf.getPage(num).then(function(page) {
+    var maxW    = Math.min((document.getElementById('pdfScrollArea').clientWidth || 900) - 48, 900);
+    var vp0     = page.getViewport({ scale: 1 });
+    var scale   = maxW / vp0.width;
+    var vp      = page.getViewport({ scale: scale });
+    var dpr     = window.devicePixelRatio || 1;
+    canvas.width  = vp.width  * dpr;
+    canvas.height = vp.height * dpr;
+    canvas.style.width  = vp.width  + 'px';
+    canvas.style.height = vp.height + 'px';
+    var ctx = canvas.getContext('2d');
+    ctx.scale(dpr, dpr);
+    page.render({ canvasContext: ctx, viewport: vp });
+  });
+}
+
+function closePdfModal() {
+  var modal = document.getElementById('pdfModal');
+  if (!modal) return;
+  modal.classList.remove('open');
+  document.body.style.overflow = '';
+  _pdfDoc = null;
+}
+
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') closePdfModal();
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  var m = document.getElementById('pdfModal');
+  if (m) m.addEventListener('click', function(e) {
+    if (e.target === m) closePdfModal();
+  });
+  if (typeof pdfjsLib !== 'undefined') {
+    pdfjsLib.GlobalWorkerOptions.workerSrc =
+      'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+  }
+});
+
+/* ─────────────────────────────────────────────
+   PAGE NAVIGATION
+   Maps page keys to their HTML files.
+   Used by go('key') calls across the site.
+───────────────────────────────────────────── */
+const PAGE_MAP = {
+  home:      'index.html',
+  about:     'about.html',
+  staff:     'staff.html',
+  programs:  'programs.html',
+  resources: 'resources.html',
+  articles:  'articles.html',
+  involve:   'involve.html',
+  chapters:  'chapters.html',
+  donate:    'donate.html',
+  sponsor:   'sponsor.html',
+  contact:   'contact.html',
+};
+
+function go(page) {
+  const dest = PAGE_MAP[page];
+  if (!dest) { console.warn('go(): unknown page key:', page); return; }
+  window.location.href = dest;
+}
