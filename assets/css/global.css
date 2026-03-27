@@ -1,21 +1,21 @@
 :root {
-      --coral: #E05B42;
-      --coral-d: #C44A32;
-      --coral-l: #FDEAE6;
-      --navy: #1C2E4A;
-      --navy-m: #2E4A70;
-      --blue: #3B82C4;
-      --blue-l: #EBF3FB;
-      --sky: #E8F0FA;
-      --mint: #E6F5F0;
-      --gold: #F5A623;
-      --cream: #FFFCF8;
-      --warm: #FBF7F3;
-      --sand: #F0EAE2;
-      --rule: #E2D9D0;
-      --text: #1C2E4A;
-      --muted: #5E6E82;
-      --white: #ffffff;
+ --coral: #f27f0c;      /* Princeton Orange */
+  --coral-d: #d46a06;    /* Princeton Orange (Darkened) */
+  --coral-l: #fdf2e7;    /* Princeton Orange (Light Tint) */
+  --navy: #053f5c;       /* Yale Blue */
+  --navy-m: #105b82;     /* Yale Blue (Medium) */
+  --blue: #429ebd;       /* Blue Green */
+  --blue-l: #9fe7f5;     /* Frosted Blue */
+  --sky: #e0f9fd;        /* Frosted Blue (Light) */
+  --mint: #fcebc7;       /* Amber Honey (Light Tint) */
+  --gold: #f7ad19;       /* Amber Honey */
+  --cream: #fffcf8;      /* Cream (Neutral) */
+  --warm: #fbf7f3;       /* Warm (Neutral) */
+  --sand: #f0eae2;       /* Sand (Neutral) */
+  --rule: #d1eef4;       /* Frosted Blue (Muted for Borders) */
+  --text: #053f5c;       /* Yale Blue (Main Text) */
+  --muted: #429ebd;      /* Blue Green (Secondary Text) */
+  --white: #ffffff;
     }
 
     *,
