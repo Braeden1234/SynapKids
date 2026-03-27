@@ -164,7 +164,7 @@
       align-items: center;
       justify-content: space-between;
       padding: 0 40px;
-      background: var(--blue-l);
+      background: var(--navy-m);
       backdrop-filter: blur(12px);
       border-bottom: 1px solid var(--rule)
     }
