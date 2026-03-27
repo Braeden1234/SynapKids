@@ -481,17 +481,6 @@ const ARTS = [
   { id: 11, cat: 'mindfulness', title: 'The 5-4-3-2-1 Grounding Technique for Kids', excerpt: 'Step-by-step guide to teaching this sensory grounding exercise in an age-appropriate, engaging way.', author: 'Grace Kimani', initials: 'GK', ac: '#C84D33', date: 'Dec 20, 2025', min: 3, cc: '#3B82C4', pdf: "https://www.w3.org/WAI/WCAG21/Techniques/pdf/sample.pdf" },
   { id: 12, cat: 'school', title: 'Building Emotional Safety in the Classroom', excerpt: 'How educators can create conditions where every student feels safe enough to learn, take risks, and be themselves.', author: 'Marcus Webb', initials: 'MW', ac: '#2B6CB8', date: 'Dec 12, 2025', min: 5, cc: '#3B82C4', pdf: "https://www.w3.org/WAI/WCAG21/Techniques/pdf/sample.pdf" },
 ];
-function openLink() {
-  window.open("https://example.com", "_blank");
-}
-
-// Example of adding an event listener to an article title
-ARTS.forEach(article => {
-  const articleElement = document.createElement('div');
-  articleElement.innerHTML = `<h2>${article.title}</h2>`;
-  articleElement.addEventListener('click', openLink);
-  document.body.appendChild(articleElement);
-});
 
 const CATMAP = { anxiety: 'Anxiety', emotions: 'Emotions', parenting: 'Parenting', mindfulness: 'Mindfulness', neuroscience: 'Neuroscience', school: 'School' };
 let curCat = 'all', curSort = 'newest';
