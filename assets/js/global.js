@@ -481,6 +481,15 @@ const ARTS = [
   { id: 11, cat: 'mindfulness', title: 'The 5-4-3-2-1 Grounding Technique for Kids', excerpt: 'Step-by-step guide to teaching this sensory grounding exercise in an age-appropriate, engaging way.', author: 'Grace Kimani', initials: 'GK', ac: '#C84D33', date: 'Dec 20, 2025', min: 3, cc: '#3B82C4', pdf: "https://www.w3.org/WAI/WCAG21/Techniques/pdf/sample.pdf" },
   { id: 12, cat: 'school', title: 'Building Emotional Safety in the Classroom', excerpt: 'How educators can create conditions where every student feels safe enough to learn, take risks, and be themselves.', author: 'Marcus Webb', initials: 'MW', ac: '#2B6CB8', date: 'Dec 12, 2025', min: 5, cc: '#3B82C4', pdf: "https://www.w3.org/WAI/WCAG21/Techniques/pdf/sample.pdf" },
 ];
+//Remove it if problem
+function openLink(id) {
+  const article = ARTS.find(item => item.id === id);
+  if (article) {
+    window.open(article.pdf, '_blank');
+  } else {
+    console.error('Article not found');
+  }
+}
 
 const CATMAP = { anxiety: 'Anxiety', emotions: 'Emotions', parenting: 'Parenting', mindfulness: 'Mindfulness', neuroscience: 'Neuroscience', school: 'School' };
 let curCat = 'all', curSort = 'newest';
